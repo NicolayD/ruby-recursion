@@ -14,8 +14,7 @@ end
 
 def fibs_rec(n,array=[0,1])
 	return "Invalid number" if n < 1
-	return 0 if n == 0
-	return [0] if n == 1 && array.size == 2
+	return 0 if n == 0 || (n == 1 && array.size == 2)
 	return 1 if n == 1
 	return array if n == 2 && array.size == 2
 	if n > 2
